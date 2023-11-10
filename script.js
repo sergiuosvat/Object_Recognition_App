@@ -1,6 +1,6 @@
 const video = document.getElementById('webcam');
 const liveView = document.getElementById('liveView');
-const demosSection = document.getElementById('demos');
+const cameraSection = document.getElementById('cameraSection');
 const enableWebcamButton = document.getElementById('webcamButton');
 let soundIsplaying = false;
 
@@ -89,6 +89,6 @@ function playSound() {
 
 cocoSsd.load().then(function (loadedModel) {
     model = loadedModel;
-    demosSection.classList.remove('invisible');
+    cameraSection.classList.remove('invisible');
   });
   
